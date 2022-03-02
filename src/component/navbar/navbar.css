@@ -1,0 +1,133 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.nav-links{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-links_logo{
+    margin-right: 2rem;
+}
+
+.nav-links_logo img{
+    width: 62.56px;
+    height: 16.03px;
+}
+
+.nav-links_ctn{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-sign{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-menu{
+    display: none;
+    position: relative;
+    margin-left: 1rem;
+}
+
+.nav-menu svg{
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.nav-menu_ctn{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 2rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 5 rgba(0,0,0,0.2);
+}
+
+.nav-menu_ctn-links-sign{
+    display: none;
+}
+
+
+.nav-links_ctn p,
+.nav-sign p,
+.nav-menu_ctn p{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 1rem 1rem;
+    cursor: pointer;
+
+}
+
+.nav-sign button,
+.nav-menu_ctn button{
+    padding: 1rem 2rem;
+    background: #ff4820;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .nav-links_ctn{
+        display: none;
+    }
+
+    .nav-menu{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nav{
+        padding: 2rem 4rem;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .nav{
+        padding: 2rem;
+    }
+
+    .nav-sign{
+        display: none;
+    }
+
+    .nav-menu_ctn{
+        top: 10px;
+    }
+
+    .nav-menu_ctn-links-sign{
+        margin-top: 2rem;
+        display: block;
+    }
+}

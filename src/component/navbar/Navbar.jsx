@@ -10,7 +10,7 @@ const Menu = () => (
     <p> <a href="#what"> What is GPT? </a> </p>
     <p> <a href="#poss"> Open AI </a> </p>
     <p> <a href="#features"> Case Studies </a> </p>
-    <p> <a href="#blog"> Library </a> </p>
+    <p> <a href="#blog"> Libraries </a> </p>
     </>
 )
 
